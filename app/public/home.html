@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Tables Page</title>
@@ -7,32 +8,60 @@
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: 'Archivo', sans-serif;
+    }
+
+    label {
+      font-size: 25px;
+    }
+
+    #big_label {
+      font-size: 30px;
+    }
+
+    button {
+      background-color: #17B890;
+      border-color: #17B890;
+      color: white;
+    }
+
+    #links {
+      color: #5E807F;
+    }
+  </style>
 
 </head>
+
 <body>
 
   <div class="container">
 
     <div class="jumbotron">
-      <h1 class="text-center"><span class="fa fa-fire"></span> Friend Survey</h1>
+      <h1 class="text-center"><i class="fas fa-users"></i></span> Friend Survey</h1>
       <hr>
       <h2 class="text-center">Find friends here!</h2>
       <br>
 
       <div class="text-center">
-        <a href="/survey"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Take Survey</button></a>
+        <a href="/survey"><button class="btn btn-lg"><i class="fas fa-poll"></i></span> Take Survey</button></a>
       </div>
 
     </div>
 
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends Link</a> | <a href="/api/waitlist">GitHub Repo</a>
+        <p id="links"><a href="/api/friends" id="links">API Friends Link</a> | <a
+            href="https://github.com/moraveca/friendFinder.git" id="links">GitHub Repo</a>
       </div>
     </footer>
 
   </div>
 
-
 </body>
+
 </html>
